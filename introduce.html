@@ -1,0 +1,118 @@
+<html>
+<head>
+    <script async src="a.js"></script>
+    <style>
+        * {
+            padding: 0 0;
+            margin: 0 0;
+            -webkit-box-sizing: border-box;
+        }
+        ul {
+            width: 100%;
+            height: auto;
+            list-style-type: none;
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 3em;
+        }
+        ul li {
+            display: inline-block;
+            width: 31.33%;
+            padding: 1em 0;
+            margin-right: 0.5em;
+            background-color: #fafafa;
+        }
+        ul li.selected {
+            background-color: white;
+            border: 1px solid red;
+        }
+        ul li a {
+            text-decoration: none;
+        }
+        ul li span{
+            text-decoration: underline;
+        }
+        div.table {
+            display: table;
+        }
+        div.tablerow{
+            display: table-row;
+            height: 50px;
+            background-color: darkgrey;
+        }
+        div.tablerow:nth-child(even){
+            background-color: white;
+        }
+        div.tablehead{
+            width: 30%;
+            display:table-caption;
+        }
+        div.tablecell{
+            width: 70%;
+            display: table-cell;
+        }
+        #home,#specifications,#rewards {
+            display: none;
+        }
+        #home.display,#specifications.display,#rewards.display {
+            display: block;
+        }
+        #home {
+            width: 100%;
+            height: 3137px;
+            background-image: url(http://www.idcooling.com/Admin/Tpl/default/Public/kindeditor-4.1.7/attached/image/20150827/20150827225104_42371.jpg);
+        }
+        #rewards {
+            background-color: azure;
+        }
+        #rewards quote {
+            border-left: 10px solid #ccc;
+            margin: 1.5em 10px;
+            padding: 0.5em 10px;
+            quotes: "\201C""\201D""\2018""\2019";
+            display: inline-block;
+        }
+        #rewards quote:before {
+          color: lightcoral;
+          content: open-quote;
+          font-size: 4em;
+          line-height: 0.1em;
+          margin-right: 0.25em;
+          vertical-align: -0.4em;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Specifications</a></li>
+        <li><a href="#">Rewards in <span>Tomshardware</span></a></li>
+    </ul>
+    <div id="home" class="menu-item">
+    </div>
+    <div id="specifications" class="menu-item">
+        <div class="table">
+            <div class="tablerow">
+                <div class="tablehead">Compatability</div><div class="tablecell">Intel LGA2011/1366/1151/1150/1155/1156/775
+ AMD FM2+/FM2/FM1/AM3+/AM3/AM2+/AM2</div>
+            </div>
+            <div class="tablerow">
+                <div class="tablehead">TDP</div><div class="tablecell">200W</div>
+            </div>
+            <div class="tablerow">
+                <div class="tablehead">Radiator Dimension</div><div class="tablecell">274×120×27mm</div>
+            </div>
+            <div class="tablerow">
+                <div class="tablehead">Tube Length</div><div class="tablecell">315mm</div>
+            </div>
+            <div class="tablerow">
+                <div class="tablehead">Fan Dimension</div><div class="tablecell">120×120×25mm(1 fan)/<b>240x240x25mm(total 2 fan)</b></div>
+            </div>
+        </div>
+    </div>
+    <div id="rewards" class="menu-item">
+        It has just rewarded <a href="http://www.tomshardware.com/reviews/id-cooling-frostflow-240l-closed-loop-liquid-cpu-cooler,4371-2.html">2016 tom's hardware best choice</a> among water coolings in this field. With verdict
+        <quote>ID-Cooling's Frostflow 240L delivers better performance and superior value among closed-loop coolers of its size. While the expense of added components prevents liquid-cooling from reaching the price-to-performance highs of Big Air, the Frostflow 240L gets us close to that mark without putting a bunch of weight on the CPU socket.</quote>
+    </div>
+</body>
+</html>
